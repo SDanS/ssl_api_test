@@ -165,6 +165,6 @@ Test case and configuration considerations.
 * Tested via account and admin/root authentication if possible.
 * Testing permutations: optional service providers: i.e., MTA and MDA, or webservers for docs.
   * Permutation options are really the responsibility of the panel around how their api works with each service, but it's a good documentation and support head's up.
-    * Confusion, on the part of the customer and support, around the separation of concerns of the panel and the product will incur support cost.
+    * Confusion, on the part of the customer and support around the separation of concerns of the panel and the product, will incur support cost.
 
 
