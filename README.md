@@ -113,7 +113,9 @@ The changes were applied successfully.
 
 [Install Guide](https://www.directadmin.com/installguide.php)
 
-Trial Licensed on directadmin-01.sectigodemo.com
+Trial Licensed on directadmin-01.sectigodemo.com until April 14.
+
+* Necessary for installation.
 
 ## Server Information
 
@@ -122,11 +124,23 @@ Trial Licensed on directadmin-01.sectigodemo.com
 interworx-01.sectigodemo.com
 
 > IP address: 45.76.77.89
+> Licensed: Yes
 
 directadmin-01.sectigodemo.com
 
 > IP address: 149.28.65.95
+> Licensed: Trial Until April 14th
 
 plesk-01.sectigodemo.com
 
 > IP address:  149.28.76.248 
+> Licensed: No
+
+## Anticipated Issues
+
+DNS propagation: if we can't use subdomains as main account domain in the panel this may slow things down. Maybe nothing but it's something to keep in mind.
+
+* Research item for future testing: subdomains, email only domains (?), etc.
+* Account setup processes.
+  * Account permissions/privileges for setting up ssl via API?
+* Tested via account and admin/root authentication?
