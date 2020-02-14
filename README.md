@@ -124,6 +124,15 @@ interworx-01.sectigodemo.com
 > IP address: 45.76.77.89
 > Licensed: Yes
 
+* Accounts:
+  * iwx-01: 
+    * Granted all privileges.
+    * Granted all Package Features.
+    * Granted all Package Options except:
+      * Account Backup
+    * Secondary Domain: add-iwx-01.sectigodemo.com
+    * Subdomain:  sub.iwx-01.sectigodemo.com
+
 directadmin-01.sectigodemo.com
 
 > IP address: 149.28.65.95
@@ -166,6 +175,6 @@ Test case and configuration considerations.
 * Testing permutations: optional service providers: i.e., MTA and MDA, or webservers for docs.
   * Permutation options are really the responsibility of the panel around how their api works with each service, but it's a good documentation and support head's up.
     * Confusion, on the part of the customer and support around the separation of concerns of the panel and the product, will incur support cost.
-  * Integration testing will eventually arise as a necessity as panel's update and bork their API with some underlying service change.
+  * Integration testing will eventually arise as a necessity as panels update and bork their API with some underlying service change.
 
 
