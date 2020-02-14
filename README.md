@@ -14,9 +14,11 @@
 2. Configure for close to real life testing. 
 ```
 
-## Interworx
+## Control Panels
 
-### Test Configuration
+### Interworx
+
+#### Test Configuration
 
 * Environment setup:
   * Vultr VM specs:
@@ -30,15 +32,15 @@
   * OS: CentOS7 (max supported)
   * [System Requirements](https://www.interworx.com/support/faq/requirements-interworx-control-panel/)
 
-#### Installation
+##### Installation
 
 [Interworx Installation](https://www.interworx.com/support/faq/install-interworx-control-panel/)
 
 
 
-## Plesk
+### Plesk
 
-### Test Configuration
+#### Test Configuration
 
 * Environment setup:
   * Vultr VM specs:
@@ -53,7 +55,7 @@
   * [Software Requirements](https://www.plesk.com/blog/various/plesk-requirements-hardware-software/)
   * [Hardware Requirements](https://docs.plesk.com/release-notes/12.5/hardware-requirements/)
 
-#### Installation
+##### Installation
 
 [Install instructions](https://www.plesk.com/blog/various/install-plesk-linux/)
 
@@ -91,9 +93,9 @@ about issues occurred, including installation and upgrade issues? [Y/n]: n
 The changes were applied successfully.
 ```
 
-## DirectAdmin
+### DirectAdmin
 
-### Test Configuration
+#### Test Configuration
 
 * Environment setup:
   * Vultr VM specs:
@@ -107,7 +109,24 @@ The changes were applied successfully.
     * It runs on many OS(s).
   * [System Requirements](https://www.directadmin.com/install.php)
 
-#### Installation
+##### Installation
 
 [Install Guide](https://www.directadmin.com/installguide.php)
 
+Trial Licensed on directadmin-01.sectigodemo.com
+
+## Server Information
+
+### Interworx
+
+interworx-01.sectigodemo.com
+
+> IP address: 45.76.77.89
+
+directadmin-01.sectigodemo.com
+
+> IP address: 149.28.65.95
+
+plesk-01.sectigodemo.com
+
+> IP address:  149.28.76.248 
