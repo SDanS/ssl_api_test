@@ -119,8 +119,6 @@ Trial Licensed on directadmin-01.sectigodemo.com until April 14.
 
 ## Server Information
 
-### Interworx
-
 interworx-01.sectigodemo.com
 
 > IP address: 45.76.77.89
@@ -136,11 +134,26 @@ plesk-01.sectigodemo.com
 > IP address:  149.28.76.248 
 > Licensed: No
 
+Needed dns entries: 
+
+interworx-01.sectigodemo.com : 45.76.77.89
+iwx-01.sectigodemo.com : 45.76.77.89
+
+directadmin-01.sectigodemo.com : 149.28.65.95
+da-01.sectigodemo.com : 149.28.65.95
+
+plesk-01.sectigodemo.com : 149.28.76.248
+p-01.sectigodemo.com : 149.28.76.248
+
 ## Anticipated Issues
 
 DNS propagation: if we can't use subdomains as main account domain in the panel this may slow things down. Maybe nothing but it's something to keep in mind.
 
-* Research item for future testing: subdomains, email only domains (?), etc.
+## Testing considerations
+
+Test case and configuration considerations.
+
+* Panel limitations around subdomains, email only domains (?), various service certificates, etc.
 * Account setup processes.
   * Account permissions/privileges for setting up ssl via API?
-* Tested via account and admin/root authentication?
+* Tested via account and admin/root authentication if possible.
