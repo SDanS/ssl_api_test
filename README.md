@@ -138,12 +138,18 @@ Needed dns entries:
 
 interworx-01.sectigodemo.com : 45.76.77.89
 iwx-01.sectigodemo.com : 45.76.77.89
+sub.iwx-01.sectigodemo.com : 45.76.77.89
+add-iwx-01.sectigodemo.com : 45.76.77.89
 
 directadmin-01.sectigodemo.com : 149.28.65.95
 da-01.sectigodemo.com : 149.28.65.95
+sub.da-01.sectigodemo.com : 149.28.65.95
+add-da-01.sectigodemo.com : 149.28.65.95
 
 plesk-01.sectigodemo.com : 149.28.76.248
 p-01.sectigodemo.com : 149.28.76.248
+sub.p-01.sectigodemo.com : 149.28.76.248
+add-p-01.sectigodemo.com : 149.28.76.248
 
 ## Anticipated Issues
 
@@ -157,3 +163,8 @@ Test case and configuration considerations.
 * Account setup processes.
   * Account permissions/privileges for setting up ssl via API?
 * Tested via account and admin/root authentication if possible.
+* Testing permutations: optional service providers: i.e., MTA and MDA, or webservers for docs.
+  * Permutation options are really the responsibility of the panel around how their api works with each service, but it's a good documentation and support head's up.
+    * Confusion, on the part of the customer and support, around the separation of concerns of the panel and the product will incur support cost.
+
+
