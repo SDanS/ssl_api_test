@@ -1,0 +1,15 @@
+[root@directadmin-01 custombuild]# php -m | grep imap
+[root@directadmin-01 custombuild]# php -m | grep json
+json
+[root@directadmin-01 custombuild]# php -m | grep ldap
+[root@directadmin-01 custombuild]# php -m | grep libxml
+libxml
+[root@directadmin-01 custombuild]# php -m | grep mailparse
+[root@directadmin-01 custombuild]# php -m | grep iconv
+iconv
+[root@directadmin-01 custombuild]# php -m | grep mbstring
+mbstring
+[root@directadmin-01 custombuild]# php -m | grep mcrypt
+[root@directadmin-01 custombuild]# php -m | grep simplexml
+[root@directadmin-01 custombuild]# php -m | grep zlib
+zlib

@@ -129,7 +129,7 @@ interworx-01.sectigodemo.com
     * Granted all privileges.
     * Granted all Package Features.
     * Granted all Package Options except:
-      * Account Backup
+      * Account Backup (Off by default)
     * Secondary Domain: add-iwx-01.sectigodemo.com
     * Subdomain:  sub.iwx-01.sectigodemo.com
 
@@ -138,10 +138,17 @@ directadmin-01.sectigodemo.com
 > IP address: 149.28.65.95
 > Licensed: Trial Until April 14th
 
+* Accounts
+  *  Same general setup as above.
+     *  TODO: say more.
+
 plesk-01.sectigodemo.com
 
 > IP address:  149.28.76.248 
 > Licensed: No
+
+* Accounts
+  * Users and domains are nuts on plesk, but again, happy path to victory.
 
 Needed dns entries: 
 
@@ -177,4 +184,20 @@ Test case and configuration considerations.
     * Confusion, on the part of the customer and support around the separation of concerns of the panel and the product, will incur support cost.
   * Integration testing will eventually arise as a necessity as panels update and bork their API with some underlying service change.
 
+## Blesta Installation
 
+I chose to install it on the Directadmin server. This choice was based on the fact that Plesk is not a good choice for various reasons from research I did. The way ( it may be a solved problem now ) that it restarts apache smashes the blesta api connection.
+
+DirectAdmin has it's own set of problems. But it seems like the most stable of the three to install it on. Interworx has been generally frustrating to work with so far. It needs some tweaking before it's ready to do any type of work. The interface suddenly and frequently becomes unresponsive and the iworx server stops serving pages. Restarting the iworx process resolves the issue, but not for long. It almost seems to be ddos(ing) itself, but I need to dig into it further before I jump to any conclusions.
+
+Installing the prerequisite php modules required a little wrangling.
+
+* yum install epel-release ; yum install uw-imap-devel uw-imap-static libc-client
+* yum install gmp-devel
+* And adding the prerequisites through the php custombuild script.
+* Tons of symlinking /usr/lib64/*.{so,a} to /usr/lib
+
+- [ ]   Generate Certs for each domain and subdomain
+- [ ]   Work out authentication scripts.
+- [ ]   Spec out api calls.
+- [ ]   Wrtie api calls.
