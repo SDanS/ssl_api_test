@@ -161,6 +161,7 @@ directadmin-01.sectigodemo.com : 149.28.65.95
 da-01.sectigodemo.com : 149.28.65.95
 sub.da-01.sectigodemo.com : 149.28.65.95
 add-da-01.sectigodemo.com : 149.28.65.95
+blesta.sectigodemo.com : 149.28.65.95
 
 plesk-01.sectigodemo.com : 149.28.76.248
 p-01.sectigodemo.com : 149.28.76.248
@@ -196,6 +197,19 @@ Installing the prerequisite php modules required a little wrangling.
 * yum install gmp-devel
 * And adding the prerequisites through the php custombuild script.
 * Tons of symlinking /usr/lib64/*.{so,a} to /usr/lib
+
+### Account setup
+
+Creating a reseller for backup purposes. This should make the domain and user setups transferrable . . . to another directadmin server. A similar setup should be considered for any other test components aside from test accounts/domains. This will require further thought. But we're just exploring right now. Nothing is written in stone yet.
+
+Rsync seems to be the best bet here.
+
+### GOTCHAS
+
+Turn off SSL for all of the blesta modules until I can look into service certificates. . . It fails quite silently on DirectAdmin.
+
+* See if there is a way to simply make it more permissive.
+
 
 - [ ]   Generate Certs for each domain and subdomain
 - [ ]   Work out authentication scripts.
