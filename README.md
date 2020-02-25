@@ -184,6 +184,18 @@ Test case and configuration considerations.
   * Permutation options are really the responsibility of the panel around how their api works with each service, but it's a good documentation and support head's up.
     * Confusion, on the part of the customer and support around the separation of concerns of the panel and the product, will incur support cost.
   * Integration testing will eventually arise as a necessity as panels update and bork their API with some underlying service change.
+  * module setup: Using non-admin users? Various permutations in there. Do any of them affect necessary API calls?
+    * I believe all modules can be setup to use different users. 
+      * Documentation should be reviewed to determine the capabilities in both module creation for using non-admin users. 
+  * packages: Reseller, and standard user account types. Those are the two permutations I've seen thus far.
+    * Interworx does not seem to have these options in package creation.
+  * Setup staff in Blesta before creating domains.
+  * Subdomains are not managed in Blesta for most control panels. 
+    * cPanel *may* have support.
+      * [cPanel Feature Request](https://dev.blesta.com/browse/CORE-2849)
+    * But it seems most don't from just a cursory look. This will require manual entry/click for subdomains. [blah](https://requests.blesta.com/topic/choosing-a-subdomain-for-hosting-product)
+      * There are api calls to retrieve lists of subdomains and add-on domains. 
+        * This could be auto-populated to whatever extent possible for most control panels.
 
 ## Blesta Installation
 
@@ -206,7 +218,7 @@ Rsync seems to be the best bet here.
 
 ### GOTCHAS
 
-Turn off SSL for all of the blesta modules until I can look into service certificates. . . It fails quite silently on DirectAdmin.
+Turn off SSL for all of the blesta modules (except plesk) until I can look into service/hostname certificates and the different api calls needed for those. . . It fails quite silently over a self-signed cert on DirectAdmin.
 
 It was necessary to install a letsencrypt ssl certificate for plesk. There is no option to disable ssl in the module configuration.
 
