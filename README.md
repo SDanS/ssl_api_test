@@ -150,12 +150,32 @@ plesk-01.sectigodemo.com
 * Accounts
   * Users and domains are nuts on plesk, but again, happy path to victory.
 
-Needed dns entries: 
+### Needed dns entries: 
+
+#### Registered nameservers
+
+p-01.sectigodemo.com, add-p-01.sectigodemo.com, park-p-01.sectigodemo.com :
+
+* ns1.p-01.sectigodemo.com : 149.28.76.248
+* ns2.p-01.sectigodemo.com : 45.63.60.214
+
+iwx-01.sectigodemo.com, add-iwx-01.sectigodemo.com, park-iwx-01.sectigodemo.com :
+
+* ns1.iwx-01.sectigodemo.com : 45.76.77.89
+* ns2.iwx-01.sectigodemo.com : 149.248.21.196
+
+da-01.sectigodemo.com, add-da-01.sectigodemo.com, park-da-01.sectigodemo.com, blesta.sectigodemo.com :
+
+* ns1.da-01.sectigodemo.com : 149.28.65.95
+* ns2.da-01.sectigodemo.com : 45.63.50.151
+
+#### A Records
 
 interworx-01.sectigodemo.com : 45.76.77.89
 iwx-01.sectigodemo.com : 45.76.77.89
 sub.iwx-01.sectigodemo.com : 45.76.77.89
 add-iwx-01.sectigodemo.com : 45.76.77.89
+149.248.21.196 
 
 directadmin-01.sectigodemo.com : 149.28.65.95
 da-01.sectigodemo.com : 149.28.65.95
@@ -196,6 +216,8 @@ Test case and configuration considerations.
     * But it seems most don't from just a cursory look. This will require manual entry/click for subdomains. [blah](https://requests.blesta.com/topic/choosing-a-subdomain-for-hosting-product)
       * There are api calls to retrieve lists of subdomains and add-on domains. 
         * This could be auto-populated to whatever extent possible for most control panels.
+  * Do NOT forget to test pointer/parked domains.
+    * They seem as though they may be a special case of multidomain certs.
 
 ## Blesta Installation
 
@@ -224,9 +246,11 @@ It was necessary to install a letsencrypt ssl certificate for plesk. There is no
 
 * See if there is a way to simply make it more permissive.
 
-csf is installed on the blesta directadmin server. This too causes failures that are very quite.
+csf is installed on the blesta directadmin server. This too causes failures that are silent.
 
-
+- [x]   Finish nameservers
+- [ ]   Test nameservers
+- [ ]   Create subdomains and addon domains
 - [ ]   Generate Certs for each domain and subdomain
 - [ ]   Work out authentication scripts.
 - [ ]   Spec out api calls.
