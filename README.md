@@ -208,7 +208,11 @@ Rsync seems to be the best bet here.
 
 Turn off SSL for all of the blesta modules until I can look into service certificates. . . It fails quite silently on DirectAdmin.
 
+It was necessary to install a letsencrypt ssl certificate for plesk. There is no option to disable ssl in the module configuration.
+
 * See if there is a way to simply make it more permissive.
+
+csf is installed on the blesta directadmin server. This too causes failures that are very quite.
 
 
 - [ ]   Generate Certs for each domain and subdomain
