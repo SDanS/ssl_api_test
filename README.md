@@ -224,6 +224,7 @@ Test case and configuration considerations.
 Hostname
 Service
 Domain
+Addon
 Subdomain
 Pointer/Park
 
