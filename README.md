@@ -219,6 +219,14 @@ Test case and configuration considerations.
   * Do NOT forget to test pointer/parked domains.
     * They seem as though they may be a special case of multidomain certs.
 
+### Cert types of interest
+
+Hostname
+Service
+Domain
+Subdomain
+Pointer/Park
+
 ## Blesta Installation
 
 I chose to install it on the Directadmin server. This choice was based on the fact that Plesk is not a good choice for various reasons from research I did. The way ( it may be a solved problem now ) that it restarts apache smashes the blesta api connection.
@@ -250,7 +258,7 @@ csf is installed on the blesta directadmin server. This too causes failures that
 
 - [x]   Finish nameservers
 - [ ]   Test nameservers
-- [ ]   Create subdomains and addon domains
+- [ ]   Create subdomains, pointer, and addon domains
 - [ ]   Generate Certs for each domain and subdomain
 - [ ]   Work out authentication scripts.
 - [ ]   Spec out api calls.
