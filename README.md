@@ -171,22 +171,58 @@ da-01.sectigodemo.com, add-da-01.sectigodemo.com, park-da-01.sectigodemo.com, bl
 
 #### A Records
 
+##### interworxdemo.net
+
+* Host:
+  * interworx-01.sectigodemo.com : 45.76.77.89
+* Nameservers:
+  * ns3.sectigodemo.com - 45.76.77.89
+  * ns4.sectigodemo.com 149.248.21.196
+
+Obsoleted:
+
+```
 interworx-01.sectigodemo.com : 45.76.77.89
 iwx-01.sectigodemo.com : 45.76.77.89
 sub.iwx-01.sectigodemo.com : 45.76.77.89
 add-iwx-01.sectigodemo.com : 45.76.77.89
 149.248.21.196 
+```
 
+##### directadmindemo.net:
+
+* Host:
+  * directadmin-01.sectigodemo.com : 149.28.65.95
+* Nameservers:
+  * ns5.sectigodemo.com - 149.28.65.95
+  * ns6.sectigodemo.com 45.63.50.151
+
+Obsoleted:
+
+```
 directadmin-01.sectigodemo.com : 149.28.65.95
 da-01.sectigodemo.com : 149.28.65.95
 sub.da-01.sectigodemo.com : 149.28.65.95
 add-da-01.sectigodemo.com : 149.28.65.95
 blesta.sectigodemo.com : 149.28.65.95
+```
 
+##### pleskdemo.net
+
+* Host:
+  * plesk-01.sectigodemo.com : 149.28.76.248
+* Nameservers:
+  * ns1.sectigodemo.com - 149.28.76.248
+  * ns2.sectigodemo.com 49.28.76.248
+
+Obsoleted:
+
+```
 plesk-01.sectigodemo.com : 149.28.76.248
 p-01.sectigodemo.com : 149.28.76.248
 sub.p-01.sectigodemo.com : 149.28.76.248
 add-p-01.sectigodemo.com : 149.28.76.248
+```
 
 ## Anticipated Issues
 
